@@ -5,7 +5,8 @@ import { VehiculoService } from './vehiculo.service';
 @Component({
   selector: 'app-vehiculo',
   templateUrl: './vehiculo.component.html',
-  styleUrls: ['./vehiculo.component.css']
+  styleUrls: ['./vehiculo.component.css'],
+  standalone: false
 })
 export class VehiculoComponent implements OnInit {
   vehiculos: Array<Vehiculo> = [];
