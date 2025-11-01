@@ -1,3 +1,48 @@
-<p>
-  vehiculo works!
-</p>
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="header-section">
+        <div class="banner-image">
+          <img src="https://raw.githubusercontent.com/proyecto-angular/assets/main/car-banner.jpg" 
+               alt="Banner de vehículos" 
+               class="img-fluid w-100">
+        </div>
+        <div class="title-box">
+          <h2 class="title-text">COMERCIALIZACIÓN DE AUTOMOTORES</h2>
+          <h3 class="subtitle-text">NUEVOS Y USADOS</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-md-8">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Línea</th>
+            <th scope="col">Modelo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vehiculo of vehiculos">
+            <th scope="row">{{ vehiculo.id }}</th>
+            <td>{{ vehiculo.marca }}</td>
+            <td>{{ vehiculo.linea }}</td>
+            <td>{{ vehiculo.modelo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <footer class="text-center">
+        <p>Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo</p>
+      </footer>
+    </div>
+  </div>
+</div>
