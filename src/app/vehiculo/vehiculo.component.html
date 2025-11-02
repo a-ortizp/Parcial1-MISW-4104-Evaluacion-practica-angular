@@ -36,6 +36,13 @@
           </tr>
         </tbody>
       </table>
+
+      <!-- Sección de conteo de marcas -->
+      <div class="conteo-marcas mt-3">
+        <div *ngFor="let marca of getMarcas()" class="marca-count">
+          <strong>Total {{ marca }}:</strong> {{ conteoMarcas[marca] }}
+        </div>
+      </div>
     </div>
   </div>
 
